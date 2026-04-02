@@ -122,6 +122,8 @@
   border-top: 1px solid #ddd;
 }
 
+
+
 @media (max-width: 768px) {
   .footer-menu {
     flex-direction: column;

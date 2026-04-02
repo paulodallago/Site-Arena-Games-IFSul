@@ -139,9 +139,9 @@ html {
 
 .events-list {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    max-width: 800px;
+    flex-direction: row;
+    gap: 1rem;
+    max-width: 90vw;
     margin: 0 auto;
 }
 
@@ -473,10 +473,15 @@ a.name:hover {
 .event-card .event-actions,
 .event-card .event-more {
   display: inline-flex;          /* ficam na mesma linha */
-  gap: 10px;
-  flex-wrap: wrap;               /* quebra se faltar espaço */
+  /* gap: 10px; */
+  /* flex-wrap: wrap;               quebra se faltar espaço */
   align-items: center;
   margin-top: 12px;
+  width: 100%;
+}
+
+.event-actions > .btn, .event-more > .btn {
+    width: 100%
 }
 
 /* ===== HERO: imagem de fundo na seção #home (sem quebrar outras imagens) ===== */

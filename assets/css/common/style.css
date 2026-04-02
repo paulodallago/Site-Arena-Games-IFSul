@@ -34,7 +34,7 @@ html {
 .btn-secondary {
   display: inline-block;
   padding: 0.8rem 2rem;
-  background-color: #0f085a;
+  background-color: #393d67;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -197,7 +197,6 @@ html {
 .contact-info p i{
   margin-right: 10px
 }
-
 
 :root {
   --color-bg1: rgb(60, 7, 101);
