@@ -1,0 +1,56 @@
+.logo {
+  height: 50px;
+}
+
+.menubar {
+  position: fixed;
+  height: 10vh;
+  margin-bottom: 10vh;
+  width: 100%;
+  z-index: 1000;
+  background: white;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-right {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-right: 5vw;
+}
+
+.menu-left {
+  margin-left: 5vw;
+}
+
+.menu-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  gap: 0.5rem;
+}
+
+.menu-link:hover {
+  color: #0f085a;
+}
+
+.register {
+  text-decoration: none;
+  background: linear-gradient(
+    90deg,
+    rgba(96, 77, 235, 1) 0%,
+    rgba(0, 47, 105, 1) 100%
+  );
+  padding: 7px 15px;
+  color: white;
+  border-radius: 15px;
+  transition: 0.2s ease-in-out;
+}
+
+.register:hover {
+  transform: scale(1.15);
+}

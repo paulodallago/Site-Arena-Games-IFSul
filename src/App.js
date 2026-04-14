@@ -1,19 +1,25 @@
 import { PrimeReactProvider } from "primereact/api";
-import "primereact/resources/themes/lara-light-blue/theme.css";  // theme
-import "primereact/resources/primereact.min.css";               // core
-import "primeicons/primeicons.css";                             // icons
-
-//primereact
-import "primereact/resources/themes/lara-dark-teal/theme.css";
+import "primereact/resources/themes/bootstrap4-dark-blue/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import React from "react";
-import Home from "./views/Home";
+import Home from "./views/Home/Home";
+import Header from "./components/Header/Header";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Schedule from "./views/Schedule/Schedule";
 
 const App = () => {
   return (
     <PrimeReactProvider>
-      <Home/>
+      <BrowserRouter>
+        <Header />
+        <div style={{ paddingTop: "10vh" }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/programacao" element={<Schedule />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
     </PrimeReactProvider>
   );
 };

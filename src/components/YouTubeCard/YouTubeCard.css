@@ -1,0 +1,63 @@
+.yt-section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
+.yt-card {
+  width: 93vw;
+  height: 50vh;
+  background: #0f172a;
+  color: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+}
+
+.yt-button {
+  background-color: #ff0000;
+  color: white;
+  padding: 0 5rem;
+  border-radius: 5rem;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+
+.yt-button:hover {
+  transform: scale(1.2);
+}
+
+.pi-youtube {
+  font-size: 3rem;
+}
+
+.left {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.right {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  height: 100%;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .yt-card {
+    width: 95%;
+  }
+}

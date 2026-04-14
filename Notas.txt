@@ -1,0 +1,6 @@
+Site pras imagens dos jogos: https://www.steamgriddb.com
+
+======================
+
+TODO Tentar achar uma solução melhor pro "@ts-ignore" (remover TS)
+Carrosel tá esquisito 
