@@ -3,13 +3,11 @@ import grid_cs from "../../assets/img/grids/cs.png";
 import styles from "./Editions.module.css";
 
 import React from "react";
-import { Button } from "primereact/button";
 
 const Editions = () => {
   const carousel = [
     {
       title: "Arena Games",
-      description: "Participe do maior evento de games do IFSul.",
       image: grid_cs,
     },
     {
@@ -29,17 +27,13 @@ const Editions = () => {
     return (
       <div className={styles.carouselItem}>
         <img src={item.image} alt={item.title} className={styles.carouselImg} />
-        <div className={styles.carouselContent}>
-          <h3>{item.title}</h3>
-          <p>{item.description}</p>
-          <Button label="Saiba mais" />
-        </div>
       </div>
     );
   };
 
   return (
     <>
+      <h2 className={`${styles.sectionTitle} underline`}>Edições anteriores</h2>
       <div className={styles.carouselContainer}>
         <div className={styles.carousel}>
           <Carousel

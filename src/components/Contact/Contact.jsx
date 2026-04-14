@@ -8,12 +8,10 @@ const Contact = () => {
       <section className={styles.contact}>
         <div className={styles.container}>
           <div className={styles.contactContent}>
-            {/* LEFT IMAGE */}
             <div className={styles.contactImage}>
               <img src={logo} alt="Entre em contato" />
             </div>
 
-            {/* MIDDLE TEXT */}
             <div className={styles.contactIntro}>
               <h2>Tem interesse em apoiar?</h2>
               <p>
@@ -22,14 +20,50 @@ const Contact = () => {
               </p>
             </div>
 
-            {/* RIGHT INFO */}
             <div className={styles.contactText}>
-              <h2 className={styles.sectionTitle}>Fale Conosco</h2>
+              <h2>Fale Conosco</h2>
 
               <div className={styles.contactInfo}>
-                <p>📍 Est. Perimetral Leste, 150. Passo Fundo - RS</p>
-                <p>✉️ pf-arenagames@ifsul.edu.br</p>
-                <p>📞 (54) 2024-0400</p>
+                <p>
+                  <i
+                    className="pi pi-map-marker defaultHover-2"
+                    onClick={() =>
+                      window.open(
+                        "https://maps.app.goo.gl/MRCNfrXAJCsP1LvD9",
+                        "_blank",
+                      )
+                    }
+                  />
+                  Est. Perimetral Leste, 150. Passo Fundo - RS
+                </p>
+                <p>
+                  <i
+                    className="pi pi-envelope defaultHover-2"
+                    onClick={() =>
+                      window.open(
+                        "mailto:pf-arenagames@ifsul.edu.br",
+                        "noopener",
+                      )
+                    }
+                  />
+                  pf-arenagames@ifsul.edu.br
+                </p>
+                <p>
+                  <i className="pi pi-phone defaultHover-2" />
+                  (54) 2024-0400
+                </p>
+                <p>
+                  <i
+                    className="pi pi-instagram defaultHover-2"
+                    onClick={() =>
+                      window.open(
+                        "https://www.instagram.com/arenagamesifsul/",
+                        "_blank",
+                      )
+                    }
+                  />
+                  @arenagamesifsul
+                </p>
               </div>
 
               <div className={styles.footerSocial}>

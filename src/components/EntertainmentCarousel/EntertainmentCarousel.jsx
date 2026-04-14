@@ -10,7 +10,6 @@ const EntertainmentCarousel = () => {
   const carousel = [
     {
       title: "Laboratório de Jogos Antigos / Emulador de Jogos",
-      description: "Participe do maior evento de games do IFSul.",
       image: arena,
       date: "09/05/2026",
       time: "Durante todo o evento",
@@ -18,7 +17,6 @@ const EntertainmentCarousel = () => {
     },
     {
       title: "Sala de Jogos de Tabuleiro (Espaço Off)",
-      description: "Monte seu time e dispute o campeonato.",
       image: off,
       date: "09/05/2026",
       time: "Durante todo o evento",
@@ -29,7 +27,7 @@ const EntertainmentCarousel = () => {
   // @ts-ignore
   const itemTemplate = (item) => {
     return (
-      <div className={styles.carouselItem}>
+      <div className={`${styles.carouselItem} defaultHover`}>
         <img src={item.image} alt={item.title} className={styles.carouselImg} />
         <div className={styles.carouselContent}>
           <h3>{item.title}</h3>
@@ -68,6 +66,8 @@ const EntertainmentCarousel = () => {
             numScroll={1}
             itemTemplate={itemTemplate}
             circular
+            showNavigators={false}
+            showIndicators={false}
             // autoplayInterval={4000}
           />
         </div>

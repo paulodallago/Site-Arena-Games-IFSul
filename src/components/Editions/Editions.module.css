@@ -11,27 +11,15 @@
   border-radius: 10px;
 }
 
-.carouselContent {
-  width: 100%;
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  color: white;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 1rem;
-  border-radius: 8px;
-}
-
 .carouselImg {
   width: 100%;
   object-fit: cover;
 }
 
-.carouselContent h3 {
-  margin: 0;
-  font-size: 1.5rem;
-}
-
-.carouselContent p {
-  margin: 0.5rem 0;
+.sectionTitle {
+  color: white;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.2rem;
+  position: relative;
 }

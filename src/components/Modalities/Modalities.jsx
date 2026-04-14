@@ -29,7 +29,7 @@ const Modalities = () => {
     <>
       <section className={styles.gameModes}>
         <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>Modalidades</h2>
+          <h2 className={`${styles.sectionTitle} underline`}>Modalidades</h2>
 
           <div className={styles.modesGrid}>
             {modes.map((mode, index) => (

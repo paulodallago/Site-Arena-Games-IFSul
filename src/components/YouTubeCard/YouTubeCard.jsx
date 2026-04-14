@@ -13,7 +13,7 @@ const YouTubeCard = () => {
               Acompanhe nossa playlist no YouTube para conhecer nossas
               atividades.
             </p>
-            <Button className={styles.ytButton}>
+            <Button className={`${styles.ytButton} defaultHover`}>
               <i className="pi pi-youtube" style={{ fontSize: "3rem" }} />
             </Button>
           </div>

@@ -12,7 +12,7 @@ const Home = () => {
     <>
       <MainCarousel />
       <YouTubeCard />
-      <Editions />
+      {/* <Editions /> */}
       <Modalities />
       <Registration />
       <Contact />

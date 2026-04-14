@@ -7,7 +7,6 @@
   display: flex;
   flex-direction: column;
   width: 90%;
-  height: 80vh;
   overflow: hidden;
   border-radius: 10px;
   margin: 10px;
@@ -20,26 +19,34 @@
   background-color: var(--blue-1);
   padding: 0 2rem;
   height: 100%;
+  padding-bottom: 1rem;
 }
 
 .carouselImg {
-  max-height: 50%;
+  max-height: 50vh;
   object-fit: cover;
 }
 
+.carouselContent Button {
+  display: block;
+  margin: 0 auto;
+}
+
 .carouselContent h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  margin: 1rem 0;
 }
 
 .carouselContent p {
-  margin: 0;
+  margin: 0.5rem 0;
 }
 
 .info {
   color: var(--gray-1);
-  padding: 1rem 0;
+  font-size: 0.9rem;
 }
 
 .info i {
   margin-right: 0.5rem;
+  font-size: 0.9rem;
 }

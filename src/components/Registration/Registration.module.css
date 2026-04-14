@@ -10,7 +10,6 @@
   box-shadow: var(--shadow-1);
 }
 
-/* OVERLAY (behind) */
 .overlay {
   position: absolute;
   inset: 0;
@@ -18,7 +17,6 @@
   z-index: 1;
 }
 
-/* CONTENT (above overlay) */
 .container {
   position: relative;
   z-index: 2;
@@ -30,22 +28,25 @@
 .arenaContent {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
   align-items: center;
 }
 
 .sectionTitle {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
-}
-
-.sectionText {
-  font-size: 1rem;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .arenaContent p {
   color: #e2e8f0;
   max-width: 600px;
+  font-size: 1.3rem;
+}
+
+.btnRegister {
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  box-shadow: var(--shadow-1);
 }
 
 @media (maxwidth: 768px) {

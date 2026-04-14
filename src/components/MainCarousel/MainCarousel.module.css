@@ -20,7 +20,7 @@
   bottom: 20px;
   left: 20px;
 
-  width: calc(100% - 40px); /* keeps padding from edges */
+  width: calc(100% - 40px);
 
   color: white;
   background: rgba(0, 0, 0, 0.5);

@@ -1,46 +1,46 @@
 import { Carousel } from "primereact/carousel";
-import grid_cs from "../../assets/img/grids/cs.png";
-import grid_lol from "../../assets/img/grids/lol.png";
-import grid_valorant from "../../assets/img/grids/valorant.png";
-import grid_chess from "../../assets/img/grids/chess.jpg";
 import styles from "./ModalitiesCarousel.module.css";
 
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "primereact/button";
+import InfoDialog from "../InfoDialog/InfoDialog";
+import modalities from "../../assets/json/modalities";
 
 const ModalitiesCarousel = () => {
-  const carousel = [
-    {
-      title: "Counter Strike 2",
-      description: "Participe do maior evento de games do IFSul.",
-      image: grid_cs,
-    },
-    {
-      title: "League of Legends",
-      description: "Monte seu time e dispute o campeonato.",
-      image: grid_lol,
-    },
-    {
-      title: "Valorant",
-      description: "Mostre sua habilidade no Rift.",
-      image: grid_valorant,
-    },
-    {
-      title: "Xadrez",
-      description: "Mostre sua habilidade no Rift.",
-      image: grid_chess,
-    },
-  ];
+  const [visible, setVisible] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(null);
 
   // @ts-ignore
   const itemTemplate = (item) => {
     return (
-      <div className={styles.carouselItem}>
+      <div className={`${styles.carouselItem} defaultHover`}>
         <img src={item.image} alt={item.title} className={styles.carouselImg} />
         <div className={styles.carouselContent}>
           <h3>{item.title}</h3>
-          <p>{item.description}</p>
-          <Button label="Saiba mais" className="transparent-button" />
+          <div className={styles.info}>
+            <p>
+              <i className="pi pi-calendar" />
+              {item.date}
+            </p>
+            <p>
+              <i className="pi pi-clock" />
+              {item.time}
+            </p>
+            <p>
+              <i className="pi pi-map-marker" />
+              {item.location}
+            </p>
+            <hr className="separator" />
+          </div>
+          <Button
+            icon="pi pi-info-circle"
+            label="Saiba mais"
+            className="transparent-button"
+            onClick={() => {
+              setSelectedItem(item);
+              setVisible(true);
+            }}
+          />
         </div>
       </div>
     );
@@ -50,8 +50,13 @@ const ModalitiesCarousel = () => {
     <>
       <div className={styles.carouselContainer}>
         <div className={styles.carousel}>
+          <InfoDialog
+            body={selectedItem}
+            visible={visible}
+            setVisible={setVisible}
+          />
           <Carousel
-            value={carousel}
+            value={modalities}
             numVisible={3}
             numScroll={1}
             itemTemplate={itemTemplate}

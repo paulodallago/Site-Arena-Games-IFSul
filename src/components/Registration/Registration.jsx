@@ -22,7 +22,8 @@ const Registration = () => {
             </p>
 
             <Button
-              label="Inscrições"
+              label="INSCRIÇÕES"
+              className={`${styles.btnRegister} defaultHover`}
               onClick={() =>
                 window.open(
                   "https://painel.passofundo.ifsul.edu.br/syseve/inscricoes/",

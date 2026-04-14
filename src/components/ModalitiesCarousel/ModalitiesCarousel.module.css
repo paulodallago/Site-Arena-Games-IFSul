@@ -7,7 +7,6 @@
   display: flex;
   flex-direction: column;
   width: 90%;
-  height: 50vh;
   overflow: hidden;
   border-radius: 10px;
   margin: 10px;
@@ -20,7 +19,11 @@
   background: var(--blue-1);
   padding: 1rem;
   height: 100%;
-  text-align: center;
+}
+
+.carouselContent Button {
+  display: block;
+  margin: 0 auto;
 }
 
 .carouselImg {
@@ -30,9 +33,20 @@
 
 .carouselContent h3 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .carouselContent p {
   margin: 0.5rem 0;
+}
+
+.info {
+  color: var(--gray-1);
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.info i {
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
 }

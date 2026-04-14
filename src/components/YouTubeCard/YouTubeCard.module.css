@@ -26,9 +26,6 @@
   transition: 0.2s ease-in-out;
   box-shadow: var(--shadow-1);
 }
-Hero .ytButton:hover {
-  transform: scale(1.2);
-}
 
 .left {
   flex: 0.5;
