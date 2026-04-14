@@ -12,11 +12,17 @@ const EntertainmentCarousel = () => {
       title: "Laboratório de Jogos Antigos / Emulador de Jogos",
       description: "Participe do maior evento de games do IFSul.",
       image: arena,
+      date: "09/05/2026",
+      time: "Durante todo o evento",
+      location: "IFSul - Passo Fundo",
     },
     {
       title: "Sala de Jogos de Tabuleiro (Espaço Off)",
       description: "Monte seu time e dispute o campeonato.",
       image: off,
+      date: "09/05/2026",
+      time: "Durante todo o evento",
+      location: "IFSul - Passo Fundo",
     },
   ];
 
@@ -26,9 +32,27 @@ const EntertainmentCarousel = () => {
       <div className={styles.carouselItem}>
         <img src={item.image} alt={item.title} className={styles.carouselImg} />
         <div className={styles.carouselContent}>
-          <h2>{item.title}</h2>
+          <h3>{item.title}</h3>
           <p>{item.description}</p>
-          <Button label="Saiba mais" />
+          <div className={styles.info}>
+            <p>
+              <i className="pi pi-calendar" />
+              {item.date}
+            </p>
+            <p>
+              <i className="pi pi-clock" />
+              {item.time}
+            </p>
+            <p>
+              <i className="pi pi-map-marker" />
+              {item.location}
+            </p>
+          </div>
+          <Button
+            label="Saiba mais"
+            icon="pi pi-info-circle"
+            className="transparent-button"
+          />
         </div>
       </div>
     );

@@ -11,17 +11,35 @@
   overflow: hidden;
   border-radius: 10px;
   margin: 10px;
+  box-shadow: var(--shadow-1);
 }
 
 .carouselContent {
   width: 100%;
   color: white;
-  background: rgb(52, 37, 161);
-  padding: 1rem;
+  background-color: var(--blue-1);
+  padding: 0 2rem;
   height: 100%;
-  text-align: center;
 }
 
 .carouselImg {
-  max-height: 60%;
+  max-height: 50%;
+  object-fit: cover;
+}
+
+.carouselContent h3 {
+  font-size: 1.5rem;
+}
+
+.carouselContent p {
+  margin: 0;
+}
+
+.info {
+  color: var(--gray-1);
+  padding: 1rem 0;
+}
+
+.info i {
+  margin-right: 0.5rem;
 }

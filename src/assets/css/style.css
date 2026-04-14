@@ -1,0 +1,24 @@
+:root {
+  --blue-1: rgb(28, 28, 123);
+  --gray-1: rgba(255, 255, 255, 0.72);
+  --background-black: #121212;
+  --background-blue: #0f172a;
+
+  --shadow-1: 0px 0px 11px 2px #0d0d0d;
+
+  .p-button {
+    background-color: var(--blue-1);
+    color: white;
+    border: none;
+  }
+
+  .transparent-button {
+    border: 2px solid rgb(222, 222, 222) !important;
+    background-color: unset;
+  }
+
+  .transparent-button:hover {
+    filter: brightness(120%);
+    background-color: rgba(255, 255, 255, 0.19);
+  }
+}

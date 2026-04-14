@@ -40,7 +40,7 @@ const ModalitiesCarousel = () => {
         <div className={styles.carouselContent}>
           <h3>{item.title}</h3>
           <p>{item.description}</p>
-          <Button label="Saiba mais" />
+          <Button label="Saiba mais" className="transparent-button" />
         </div>
       </div>
     );
