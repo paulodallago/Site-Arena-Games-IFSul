@@ -16,11 +16,6 @@ const Home = () => {
       <Modalities />
       <Registration />
       <Contact />
-      <Footer />
-
-      {/* STYLES */}
-      <style>{`
-      `}</style>
     </>
   );
 };

@@ -1,19 +1,19 @@
 import React from "react";
 import background from "../../assets/img/general/background_registrations.jpg";
 import { Button } from "primereact/button";
-import "./Registration.css";
+import styles from "./Registration.module.css";
 
 const Registration = () => {
   return (
     <>
       <section
-        className="arena"
+        className={styles.arena}
         style={{ backgroundImage: `url(${background})` }}
       >
-        <div className="overlay"></div>
-        <div className="container">
-          <div className="arena-content">
-            <h2 className="section-title">Inscrições</h2>
+        <div className={styles.overlay}></div>
+        <div className={styles.container}>
+          <div className={styles.arenaContent}>
+            <h2 className={styles.sectionTitle}>Inscrições</h2>
 
             <p>
               A Arena Games IFSul – Passo Fundo está te esperando! Competições,

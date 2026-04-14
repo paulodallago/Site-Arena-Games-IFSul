@@ -1,11 +1,11 @@
-.yt-section {
+.ytSection {
   width: 100vw;
   display: flex;
   justify-content: center;
   margin: 4rem 0;
 }
 
-.yt-card {
+.ytCard {
   width: 93vw;
   height: 50vh;
   background: #0f172a;
@@ -17,7 +17,7 @@
   flex-direction: row;
 }
 
-.yt-button {
+.ytButton {
   background-color: #ff0000;
   color: white;
   padding: 0 5rem;
@@ -26,12 +26,8 @@
   transition: 0.2s ease-in-out;
 }
 
-.yt-button:hover {
+.ytButton:hover {
   transform: scale(1.2);
-}
-
-.pi-youtube {
-  font-size: 3rem;
 }
 
 .left {
@@ -56,8 +52,8 @@ iframe {
   border: none;
 }
 
-@media (max-width: 768px) {
-  .yt-card {
+@media (maxwidth: 768px) {
+  .ytCard {
     width: 95%;
   }
 }

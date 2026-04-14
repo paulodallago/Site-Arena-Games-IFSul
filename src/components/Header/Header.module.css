@@ -2,7 +2,7 @@
   height: 50px;
 }
 
-.menubar {
+.menuBar {
   position: fixed;
   height: 10vh;
   margin-bottom: 10vh;
@@ -13,18 +13,18 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.menu-right {
+.menuRight {
   display: flex;
   gap: 1.5rem;
   align-items: center;
   margin-right: 5vw;
 }
 
-.menu-left {
+.menuLeft {
   margin-left: 5vw;
 }
 
-.menu-link {
+.menuLink {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -34,7 +34,7 @@
   gap: 0.5rem;
 }
 
-.menu-link:hover {
+.menuLink:hover {
   color: #0f085a;
 }
 

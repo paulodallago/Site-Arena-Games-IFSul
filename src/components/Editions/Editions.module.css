@@ -3,15 +3,15 @@
   margin: 0 auto;
 }
 
-.carousel-item {
+.carouselItem {
   position: relative;
-  width: 100%;
+  width: 90%;
   height: 50vh;
   overflow: hidden;
   border-radius: 10px;
 }
 
-.carousel-content {
+.carouselContent {
   width: 100%;
   position: absolute;
   bottom: 20px;
@@ -22,16 +22,16 @@
   border-radius: 8px;
 }
 
-.carousel-img {
+.carouselImg {
   width: 100%;
   object-fit: cover;
 }
 
-.carousel-content h3 {
+.carouselContent h3 {
   margin: 0;
   font-size: 1.5rem;
 }
 
-.carousel-content p {
+.carouselContent p {
   margin: 0.5rem 0;
 }

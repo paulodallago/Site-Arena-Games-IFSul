@@ -1,4 +1,4 @@
-.game-modes {
+.gameModes {
   padding: 4rem 0;
   background: linear-gradient(135deg, #1a1a2e, #16213e);
 }
@@ -9,7 +9,7 @@
   margin: 0 auto;
 }
 
-.section-title {
+.sectionTitle {
   color: white;
   text-align: center;
   margin-bottom: 3rem;
@@ -18,7 +18,7 @@
   position: relative;
 }
 
-.section-title::after {
+.sectionTitle::after {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -29,15 +29,13 @@
   background: linear-gradient(90deg, #304293, #4a90e2);
 }
 
-/* GRID (replaces bootstrap row/col) */
-.modes-grid {
+.modesGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
-/* CARD */
-.game-mode-card {
+.gameModeCard {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 15px;
   padding: 1.5rem;
@@ -49,7 +47,7 @@
   text-align: center;
 }
 
-.game-mode-card::before {
+.gameModeCard::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -62,16 +60,16 @@
   transition: opacity 0.3s ease;
 }
 
-.game-mode-card:hover {
+.gameModeCard:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-.game-mode-card:hover::before {
+.gameModeCard:hover::before {
   opacity: 1;
 }
 
-.game-image {
+.gameImage {
   width: 100%;
   height: 180px;
   object-fit: cover;
@@ -79,7 +77,7 @@
   margin-bottom: 1rem;
 }
 
-.game-title {
+.gameTitle {
   color: white;
   font-size: 1.2rem;
   font-weight: 700;
@@ -87,8 +85,8 @@
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
-  .modes-grid {
+@media (maxwidth: 768px) {
+  .modesGrid {
     grid-template-columns: 1fr;
   }
 }

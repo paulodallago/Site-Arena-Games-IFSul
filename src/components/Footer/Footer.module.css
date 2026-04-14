@@ -2,6 +2,7 @@
   background-color: white;
   padding: 2rem 0;
   border-top: 1px solid #eee;
+  color: #333;
 }
 
 .container {
@@ -10,27 +11,26 @@
   margin: 0 auto;
 }
 
-.footer-support {
+.footerSupport {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 2rem;
 }
 
-.footer-section {
+.footerSection {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-.footer-section h3 {
+.footerSection h3 {
   margin-bottom: 1rem;
   color: #333;
-  font-family: "Montserrat", sans-serif;
 }
 
-.support-logos {
+.supportLogos {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -38,48 +38,47 @@
   align-items: center;
 }
 
-.support-logos img {
+.supportLogos img {
   max-height: 80px;
   max-width: 150px;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
 
-.support-logos img:hover {
+.supportLogos img:hover {
   transform: scale(1.05);
 }
 
-.footer-divider {
+.footerDivider {
   width: 80%;
   margin: 1.5rem 0;
   border: none;
   border-top: 1px solid #ddd;
 }
 
-.footer-content {
+.footerContent {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.footer-copyright {
+.footerCopyright {
   color: #666;
-  font-size: 0.9rem;
   text-align: center;
 }
 
-.footer-copyright a {
+.footerCopyright a {
   color: #333;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.footer-copyright a:hover {
+.footerCopyright a:hover {
   color: #0f085a;
 }
 
-@media (max-width: 768px) {
-  .support-logos {
+@media (maxwidth: 768px) {
+  .supportLogos {
     width: 100%;
     flex-wrap: wrap;
   }

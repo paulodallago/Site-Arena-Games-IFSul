@@ -1,6 +1,7 @@
 import { Carousel } from "primereact/carousel";
-import grid_cs from "../../assets/img/grids/cs.png";
-import "./EntertainmentCarousel.css";
+import arena from "../../assets/img/arena/logo.jpeg";
+import off from "../../assets/img/partners/off.jpg";
+import styles from "./EntertainmentCarousel.module.css";
 
 import React from "react";
 import { Button } from "primereact/button";
@@ -8,29 +9,24 @@ import { Button } from "primereact/button";
 const EntertainmentCarousel = () => {
   const carousel = [
     {
-      title: "Arena Games",
+      title: "Laboratório de Jogos Antigos / Emulador de Jogos",
       description: "Participe do maior evento de games do IFSul.",
-      image: grid_cs,
+      image: arena,
     },
     {
-      title: "Valorant Championship",
+      title: "Sala de Jogos de Tabuleiro (Espaço Off)",
       description: "Monte seu time e dispute o campeonato.",
-      image: grid_cs,
-    },
-    {
-      title: "League of Legends",
-      description: "Mostre sua habilidade no Rift.",
-      image: grid_cs,
+      image: off,
     },
   ];
 
   // @ts-ignore
   const itemTemplate = (item) => {
     return (
-      <div className="carousel-item">
-        <img src={item.image} alt={item.title} className="carousel-img" />
-        <div className="carousel-content">
-          <h3>{item.title}</h3>
+      <div className={styles.carouselItem}>
+        <img src={item.image} alt={item.title} className={styles.carouselImg} />
+        <div className={styles.carouselContent}>
+          <h2>{item.title}</h2>
           <p>{item.description}</p>
           <Button label="Saiba mais" />
         </div>
@@ -40,15 +36,15 @@ const EntertainmentCarousel = () => {
 
   return (
     <>
-      <div className="carousel-container">
-        <div className="carousel">
+      <div className={styles.carouselContainer}>
+        <div className={styles.carousel}>
           <Carousel
             value={carousel}
-            numVisible={3}
+            numVisible={2}
             numScroll={1}
             itemTemplate={itemTemplate}
             circular
-            autoplayInterval={4000}
+            // autoplayInterval={4000}
           />
         </div>
       </div>

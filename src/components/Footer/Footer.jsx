@@ -1,19 +1,17 @@
 import React from "react";
 import logo_if from "../../assets/img/if/logo_pf.png";
 import logo_off from "../../assets/img/partners/off.jpg";
-import "./Footer.css";
+import styles from "./Footer.module.css";
 
 export default function Footer() {
   return (
     <>
-      <footer className="footer">
-        <div className="container">
-          {/* SUPPORT */}
-          <div className="footer-support">
-            {/* REALIZAÇÃO */}
-            <div className="footer-section">
-              <h3>Realização</h3>
-              <div className="support-logos">
+      <footer className={styles.footer}>
+        <div className={styles.container}>
+          <div className={styles.footerSupport}>
+            <div className={styles.footerSection}>
+              <h2>Realização</h2>
+              <div className={styles.supportLogos}>
                 <a
                   href="https://passofundo.ifsul.edu.br"
                   target="_blank"
@@ -24,12 +22,11 @@ export default function Footer() {
               </div>
             </div>
 
-            <hr className="footer-divider" />
+            <hr className={styles.footerDivider} />
 
-            {/* APOIO */}
-            <div className="footer-section">
-              <h3>Apoio</h3>
-              <div className="support-logos">
+            <div className={styles.footerSection}>
+              <h2>Apoio</h2>
+              <div className={styles.supportLogos}>
                 <a
                   href="https://www.instagram.com/offclubpf/"
                   target="_blank"
@@ -41,9 +38,8 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* COPYRIGHT */}
-          <div className="footer-content">
-            <p className="footer-copyright">
+          <div className={styles.footerContent}>
+            <p className={styles.footerCopyright}>
               © 2025 - IFSul - Câmpus Passo Fundo:{" "}
               <a
                 href="https://passofundo.ifsul.edu.br"

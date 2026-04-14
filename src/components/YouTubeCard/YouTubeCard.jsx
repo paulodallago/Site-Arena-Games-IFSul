@@ -1,22 +1,24 @@
 import { Button } from "primereact/button";
 import React from "react";
-import "./YouTubeCard.css";
+import styles from "./YouTubeCard.module.css";
 
 const YouTubeCard = () => {
   return (
     <>
-      <div className="yt-section">
-        <div className="yt-card">
-          <div className="left">
+      <div className={styles.ytSection}>
+        <div className={styles.ytCard}>
+          <div className={styles.left}>
             <h1>Você já conhece a Arena Games?</h1>
             <p>
               Acompanhe nossa playlist no YouTube para conhecer nossas
               atividades.
             </p>
-            <Button className="yt-button" icon="pi pi-youtube"></Button>
+            <Button className={styles.ytButton}>
+              <i className="pi pi-youtube" style={{ fontSize: "3rem" }} />
+            </Button>
           </div>
 
-          <div className="right">
+          <div className={styles.right}>
             <iframe
               src="https://www.youtube.com/embed/Mwk04vJpkPk"
               title="YouTube video"

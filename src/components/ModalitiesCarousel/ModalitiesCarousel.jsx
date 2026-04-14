@@ -1,5 +1,8 @@
 import { Carousel } from "primereact/carousel";
 import grid_cs from "../../assets/img/grids/cs.png";
+import grid_lol from "../../assets/img/grids/lol.png";
+import grid_valorant from "../../assets/img/grids/valorant.png";
+import grid_chess from "../../assets/img/grids/chess.jpg";
 import styles from "./ModalitiesCarousel.module.css";
 
 import React from "react";
@@ -8,19 +11,24 @@ import { Button } from "primereact/button";
 const ModalitiesCarousel = () => {
   const carousel = [
     {
-      title: "Arena Games",
+      title: "Counter Strike 2",
       description: "Participe do maior evento de games do IFSul.",
       image: grid_cs,
     },
     {
-      title: "Valorant Championship",
+      title: "League of Legends",
       description: "Monte seu time e dispute o campeonato.",
-      image: grid_cs,
+      image: grid_lol,
     },
     {
-      title: "League of Legends",
+      title: "Valorant",
       description: "Mostre sua habilidade no Rift.",
-      image: grid_cs,
+      image: grid_valorant,
+    },
+    {
+      title: "Xadrez",
+      description: "Mostre sua habilidade no Rift.",
+      image: grid_chess,
     },
   ];
 
@@ -48,7 +56,7 @@ const ModalitiesCarousel = () => {
             numScroll={1}
             itemTemplate={itemTemplate}
             circular
-            autoplayInterval={4000}
+            //autoplayInterval={4000}
           />
         </div>
       </div>

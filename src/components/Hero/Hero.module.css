@@ -1,0 +1,60 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  min-height: 360px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+}
+
+.heroImg {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+
+  padding: 0 5vw;
+  color: white;
+  max-width: 60%;
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.content p {
+  font-size: 1.4rem;
+}
+
+.info {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+}

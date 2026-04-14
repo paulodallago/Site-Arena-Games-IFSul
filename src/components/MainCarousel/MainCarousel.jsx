@@ -6,7 +6,7 @@ import hero_lol from "../../assets/img/heroes/lol.png";
 import hero_chess from "../../assets/img/heroes/chess.jpg";
 import React from "react";
 import { Button } from "primereact/button";
-import "./MainCarousel.css";
+import styles from "./MainCarousel.module.css";
 
 const MainCarousel = () => {
   const carousel = [
@@ -40,12 +40,12 @@ const MainCarousel = () => {
   // @ts-ignore
   const itemTemplate = (item) => {
     return (
-      <div className="carousel-item">
+      <div className={styles.carouselItem}>
         <div
-          className="carousel-img"
+          className={styles.carouselImg}
           style={{ backgroundImage: `url(${item.image})` }}
         >
-          <div className="carousel-content">
+          <div className={styles.carouselContent}>
             <h3>{item.title}</h3>
             <p>{item.description}</p>
             <Button label="Saiba mais" />
@@ -57,17 +57,16 @@ const MainCarousel = () => {
 
   return (
     <>
-      <div className="carousel-container">
-        <div className="carousel">
-          <Carousel
-            value={carousel}
-            numVisible={1}
-            numScroll={1}
-            itemTemplate={itemTemplate}
-            circular
-            autoplayInterval={4000}
-          />
-        </div>
+      <div className={styles.carouselContainer}>
+        <Carousel
+          value={carousel}
+          className={styles.carousel}
+          numVisible={1}
+          numScroll={1}
+          itemTemplate={itemTemplate}
+          circular
+          autoplayInterval={4000}
+        />
       </div>
     </>
   );

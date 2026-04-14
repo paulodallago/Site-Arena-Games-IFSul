@@ -1,6 +1,6 @@
 import { Carousel } from "primereact/carousel";
 import grid_cs from "../../assets/img/grids/cs.png";
-import "./Editions.css";
+import styles from "./Editions.module.css";
 
 import React from "react";
 import { Button } from "primereact/button";
@@ -24,11 +24,12 @@ const Editions = () => {
     },
   ];
 
+  // @ts-ignore
   const itemTemplate = (item) => {
     return (
-      <div className="carousel-item">
-        <img src={item.image} alt={item.title} className="carousel-img" />
-        <div className="carousel-content">
+      <div className={styles.carouselItem}>
+        <img src={item.image} alt={item.title} className={styles.carouselImg} />
+        <div className={styles.carouselContent}>
           <h3>{item.title}</h3>
           <p>{item.description}</p>
           <Button label="Saiba mais" />
@@ -39,8 +40,8 @@ const Editions = () => {
 
   return (
     <>
-      <div className="carousel-container">
-        <div className="carousel">
+      <div className={styles.carouselContainer}>
+        <div className={styles.carousel}>
           <Carousel
             value={carousel}
             numVisible={3}
