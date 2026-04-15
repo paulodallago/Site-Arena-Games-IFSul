@@ -15,8 +15,8 @@ const Contact = () => {
             <div className={styles.contactIntro}>
               <h2>Tem interesse em apoiar?</h2>
               <p>
-                Entre em contato conosco por meio de algum dos nossos contatos
-                ao lado.
+                Entre em contato conosco por meio de algum dos nossos meios de
+                contato.
               </p>
             </div>
 

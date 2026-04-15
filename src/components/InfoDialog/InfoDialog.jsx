@@ -9,7 +9,6 @@ const InfoDialog = ({ body, visible, setVisible }) => {
     <Dialog
       header={body.title}
       visible={visible}
-      style={{ width: "50vw" }}
       className={styles.dialog}
       onHide={() => setVisible(false)}
     >

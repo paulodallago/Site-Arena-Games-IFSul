@@ -7,4 +7,4 @@ TODO Edições anteriores (só imagens)
 TODO Verificar se vai ficar como app mobile
 TODO Adicionar texto no xadrez
 TODO fixar tamanho de imagem pra jogo pequena horizontal
-ver se tá responsivo
+ver no opera e edge

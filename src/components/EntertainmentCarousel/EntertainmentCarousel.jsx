@@ -3,12 +3,15 @@ import styles from "./EntertainmentCarousel.module.css";
 
 import React, { useState } from "react";
 import { Button } from "primereact/button";
-import entertainment from "../../assets/json/entertainment";
+import entertainment from "../../assets/json/entertainmentContent";
 import InfoDialog from "../InfoDialog/InfoDialog";
+import responsiveOptions from "../../utils";
 
 const EntertainmentCarousel = () => {
   const [visible, setVisible] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
+
+  const mobile = window.innerWidth < 768;
 
   const itemTemplate = (item) => {
     return (
@@ -59,8 +62,9 @@ const EntertainmentCarousel = () => {
             numScroll={1}
             itemTemplate={itemTemplate}
             circular
-            showNavigators={false}
+            showNavigators={mobile}
             showIndicators={false}
+            responsiveOptions={responsiveOptions}
             // autoplayInterval={4000}
           />
         </div>

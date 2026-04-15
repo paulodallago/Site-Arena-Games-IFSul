@@ -2,8 +2,11 @@ import { Carousel } from "primereact/carousel";
 import React from "react";
 import styles from "./MainCarousel.module.css";
 import mainCarouselContent from "../../assets/json/mainCarouselContent";
+import responsiveOptions from "../../utils";
 
 const MainCarousel = () => {
+  const mobile = window.innerWidth < 768;
+
   const itemTemplate = (item) => {
     return (
       <div className={styles.carouselItem}>
@@ -31,6 +34,9 @@ const MainCarousel = () => {
           itemTemplate={itemTemplate}
           circular
           autoplayInterval={4000}
+          responsiveOptions={responsiveOptions}
+          showIndicators={!mobile}
+          showNavigators={!mobile}
         />
       </div>
     </>

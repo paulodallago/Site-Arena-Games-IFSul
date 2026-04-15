@@ -40,7 +40,7 @@ export default function Footer() {
 
           <div className={styles.footerContent}>
             <p className={styles.footerCopyright}>
-              © 2025 - IFSul - Câmpus Passo Fundo:{" "}
+              <span>© 2026 - IFSul - Câmpus Passo Fundo: </span>
               <a
                 href="https://passofundo.ifsul.edu.br"
                 target="_blank"

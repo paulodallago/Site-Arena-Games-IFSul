@@ -15,6 +15,7 @@
   box-shadow: var(--shadow-1);
   display: flex;
   flex-direction: row;
+  gap: 2rem;
 }
 
 .ytButton {
@@ -34,23 +35,41 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  text-align: center;
 }
 
 .right {
   flex: 0.5;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 iframe {
   height: 100%;
+  width: 100%;
   border: none;
+  border-radius: 10px;
 }
 
-@media (maxwidth: 768px) {
+@media (max-width: 768px) {
   .ytCard {
-    width: 95%;
+    flex-direction: column;
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  .left,
+  .right {
+    flex: unset;
+    width: 100%;
+  }
+
+  iframe {
+    height: 50vh;
+  }
+
+  .ytButton {
+    padding: 0.5rem 2rem;
   }
 }

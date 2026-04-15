@@ -1,7 +1,7 @@
 import arena from "../../assets/img/arena/logo.jpeg";
 import off from "../../assets/img/partners/off.jpg";
 
-const entertainment = [
+const entertainmentContent = [
   {
     title: "Laboratório de Jogos Antigos / Emulador de Jogos",
     image: arena,
@@ -22,4 +22,4 @@ const entertainment = [
   },
 ];
 
-export default entertainment;
+export default entertainmentContent;

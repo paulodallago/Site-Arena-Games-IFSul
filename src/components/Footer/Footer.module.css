@@ -77,7 +77,7 @@
   color: #0f085a;
 }
 
-@media (maxwidth: 768px) {
+@media (max-width: 768px) {
   .supportLogos {
     width: 100%;
     flex-wrap: wrap;

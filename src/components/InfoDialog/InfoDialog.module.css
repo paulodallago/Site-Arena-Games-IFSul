@@ -1,7 +1,14 @@
 .dialog {
   font-size: 1.1rem;
+  width: 50vw;
 }
 
 .dialog h3 {
   font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+  .dialog {
+    width: 80vw;
+  }
 }

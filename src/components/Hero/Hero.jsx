@@ -5,13 +5,10 @@ import heroImg from "../../assets/img/heroes/arena_right.png";
 const Hero = () => {
   return (
     <section id="home" className={styles.hero}>
-      {/* IMAGE */}
       <img src={heroImg} alt="Arena Games IFSul" className={styles.heroImg} />
 
-      {/* OVERLAY */}
       <div className={styles.overlay}></div>
 
-      {/* CONTENT */}
       <div className={styles.content}>
         <h1>Programação do Evento</h1>
         <p>

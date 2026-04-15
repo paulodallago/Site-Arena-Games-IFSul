@@ -44,3 +44,18 @@
 .carouselContent p {
   margin: 0.5rem 0;
 }
+
+@media (max-width: 768px) {
+  .carousel {
+    width: 100vw;
+    margin-bottom: 3rem;
+  }
+
+  .carouselItem {
+    max-height: 20vh;
+  }
+
+  .carouselContent {
+    display: none;
+  }
+}

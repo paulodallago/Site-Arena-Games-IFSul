@@ -3,7 +3,7 @@ import grid_lol from "../../assets/img/grids/lol.png";
 import grid_valorant from "../../assets/img/grids/valorant.png";
 import grid_chess from "../../assets/img/grids/chess.jpg";
 
-const modalities = [
+const modalitiesContent = [
   {
     title: "Counter Strike 2",
     image: grid_cs,
@@ -222,4 +222,4 @@ const modalities = [
   },
 ];
 
-export default modalities;
+export default modalitiesContent;

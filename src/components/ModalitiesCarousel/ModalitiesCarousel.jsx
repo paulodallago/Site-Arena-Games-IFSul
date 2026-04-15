@@ -4,7 +4,8 @@ import styles from "./ModalitiesCarousel.module.css";
 import React, { useState } from "react";
 import { Button } from "primereact/button";
 import InfoDialog from "../InfoDialog/InfoDialog";
-import modalities from "../../assets/json/modalities";
+import modalities from "../../assets/json/modalitiesContent";
+import responsiveOptions from "../../utils";
 
 const ModalitiesCarousel = () => {
   const [visible, setVisible] = useState(false);
@@ -61,6 +62,7 @@ const ModalitiesCarousel = () => {
             itemTemplate={itemTemplate}
             circular
             autoplayInterval={4000}
+            responsiveOptions={responsiveOptions}
           />
         </div>
       </div>

@@ -72,7 +72,6 @@
   font-weight: 700;
 }
 
-/* RESPONSIVE */
 @media (maxwidth: 768px) {
   .modesGrid {
     grid-template-columns: 1fr;
