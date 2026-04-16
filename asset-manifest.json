@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/paulodallago/arena-games/static/css/main.a32bfe6a.css",
-    "main.js": "/paulodallago/arena-games/static/js/main.47963726.js",
-    "static/media/chess.jpg": "/paulodallago/arena-games/static/media/chess.add7473d196e8a9640da.jpg",
-    "static/media/lol.png": "/paulodallago/arena-games/static/media/lol.dbdc4471636dd225625b.png",
-    "static/media/cs.png": "/paulodallago/arena-games/static/media/cs.90a7d33467b235a2b468.png",
-    "static/media/valorant.jpg": "/paulodallago/arena-games/static/media/valorant.782c686846f713dc57de.jpg",
-    "static/media/arena.png": "/paulodallago/arena-games/static/media/arena.0fe6f43dd0339460964d.png",
-    "static/media/arena_right.png": "/paulodallago/arena-games/static/media/arena_right.ac8d87025cd14f18dea9.png",
-    "static/media/background_registrations.jpg": "/paulodallago/arena-games/static/media/background_registrations.6afda12e4b068f380a37.jpg",
-    "static/media/primeicons.svg": "/paulodallago/arena-games/static/media/primeicons.6ed59f962963a4a73af2.svg",
-    "static/media/logo.png": "/paulodallago/arena-games/static/media/logo.b805b23f96bd85d7aaa0.png",
-    "static/media/primeicons.eot": "/paulodallago/arena-games/static/media/primeicons.ff0c4cd79b2ffca2de54.eot",
-    "static/media/primeicons.woff": "/paulodallago/arena-games/static/media/primeicons.8931fda1930c3bd21e96.woff",
-    "static/media/primeicons.ttf": "/paulodallago/arena-games/static/media/primeicons.a5c2a53d1ff7a9ff5933.ttf",
-    "static/media/logo.jpeg": "/paulodallago/arena-games/static/media/logo.b4b8ff10d38f31bf94e0.jpeg",
-    "static/media/primeicons.woff2": "/paulodallago/arena-games/static/media/primeicons.024b32cc7bf399b1a847.woff2",
-    "static/media/logo_pf.png": "/paulodallago/arena-games/static/media/logo_pf.828fbfc6187e18d232d6.png",
-    "static/media/logo_dark.png": "/paulodallago/arena-games/static/media/logo_dark.c73c38952f66044cd250.png",
-    "index.html": "/paulodallago/arena-games/index.html",
-    "main.a32bfe6a.css.map": "/paulodallago/arena-games/static/css/main.a32bfe6a.css.map",
-    "main.47963726.js.map": "/paulodallago/arena-games/static/js/main.47963726.js.map"
+    "main.css": "/arena-games/static/css/main.242bb9f6.css",
+    "main.js": "/arena-games/static/js/main.bd9d4c3f.js",
+    "static/media/chess.jpg": "/arena-games/static/media/chess.add7473d196e8a9640da.jpg",
+    "static/media/lol.png": "/arena-games/static/media/lol.dbdc4471636dd225625b.png",
+    "static/media/cs.png": "/arena-games/static/media/cs.90a7d33467b235a2b468.png",
+    "static/media/valorant.jpg": "/arena-games/static/media/valorant.782c686846f713dc57de.jpg",
+    "static/media/arena.png": "/arena-games/static/media/arena.0fe6f43dd0339460964d.png",
+    "static/media/arena_right.png": "/arena-games/static/media/arena_right.ac8d87025cd14f18dea9.png",
+    "static/media/background_registrations.jpg": "/arena-games/static/media/background_registrations.6afda12e4b068f380a37.jpg",
+    "static/media/primeicons.svg": "/arena-games/static/media/primeicons.6ed59f962963a4a73af2.svg",
+    "static/media/logo.png": "/arena-games/static/media/logo.b805b23f96bd85d7aaa0.png",
+    "static/media/primeicons.eot": "/arena-games/static/media/primeicons.ff0c4cd79b2ffca2de54.eot",
+    "static/media/primeicons.woff": "/arena-games/static/media/primeicons.8931fda1930c3bd21e96.woff",
+    "static/media/primeicons.ttf": "/arena-games/static/media/primeicons.a5c2a53d1ff7a9ff5933.ttf",
+    "static/media/logo.jpeg": "/arena-games/static/media/logo.b4b8ff10d38f31bf94e0.jpeg",
+    "static/media/primeicons.woff2": "/arena-games/static/media/primeicons.024b32cc7bf399b1a847.woff2",
+    "static/media/logo_pf.png": "/arena-games/static/media/logo_pf.828fbfc6187e18d232d6.png",
+    "static/media/logo_dark.png": "/arena-games/static/media/logo_dark.c73c38952f66044cd250.png",
+    "index.html": "/arena-games/index.html",
+    "main.242bb9f6.css.map": "/arena-games/static/css/main.242bb9f6.css.map",
+    "main.bd9d4c3f.js.map": "/arena-games/static/js/main.bd9d4c3f.js.map"
   },
   "entrypoints": [
-    "static/css/main.a32bfe6a.css",
-    "static/js/main.47963726.js"
+    "static/css/main.242bb9f6.css",
+    "static/js/main.bd9d4c3f.js"
   ]
 }
