@@ -4,4 +4,4 @@
 
 - Primereact & Primeicons
 
-### Reconstruído em React.js por Paulo Henrique Dal Lago
+### Reconstruído em React.js
