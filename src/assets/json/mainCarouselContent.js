@@ -1,8 +1,8 @@
 import hero_arena from "../../assets/img/heroes/arena.png";
 import hero_cs from "../../assets/img/heroes/cs.png";
-import hero_valorant from "../../assets/img/heroes/valorant.jpg";
+import hero_valorant from "../../assets/img/heroes/valorant.png";
 import hero_lol from "../../assets/img/heroes/lol.png";
-import hero_chess from "../../assets/img/heroes/chess.jpg";
+import hero_chess from "../../assets/img/heroes/chess.png";
 
 const mainCarouselContent = [
   {
