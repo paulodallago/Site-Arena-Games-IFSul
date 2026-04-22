@@ -1,6 +1,6 @@
 import React from "react";
 import logo_if from "../../assets/img/if/logo_pf.png";
-import logo_off from "../../assets/img/partners/off.jpg";
+import logo_off from "../../assets/img/partners/off_icon.jpg";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
