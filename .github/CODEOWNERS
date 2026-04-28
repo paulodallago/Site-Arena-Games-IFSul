@@ -1,8 +1,0 @@
-# Default
-* @pf-cotin-ifsul/mant-inf-arena
-
-# Infraestrutura crítica
-/Dockerfile @pf-cotin-ifsul/cotin
-/docker-compose.yml @pf-cotin-ifsul/cotin
-/.dockerignore @pf-cotin-ifsul/cotin
-/.github @pf-cotin-ifsul/cotin
