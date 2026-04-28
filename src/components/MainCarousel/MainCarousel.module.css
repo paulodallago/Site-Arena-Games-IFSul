@@ -1,5 +1,5 @@
 .carouselContainer {
-  margin-top: 3vh;
+  margin: 3vh auto;
 }
 
 .carousel {
@@ -46,13 +46,18 @@
 }
 
 @media (max-width: 768px) {
+  .carouselContainer {
+    margin: 0 auto;
+    margin-bottom: 3vh;
+  }
+
   .carousel {
     width: 100vw;
-    margin-bottom: 3rem;
   }
 
   .carouselItem {
     max-height: 20vh;
+    border-radius: 0;
   }
 
   .carouselContent {

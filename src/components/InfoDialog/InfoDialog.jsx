@@ -21,9 +21,11 @@ const InfoDialog = ({ body, visible, setVisible }) => {
       <p>
         <strong>Local:</strong> {body.location}
       </p>
-      <p>
-        <strong>Descrição:</strong> {body.description}
-      </p>
+      {body.description && (
+        <p>
+          <strong>Descrição:</strong> {body.description}
+        </p>
+      )}
 
       <hr />
 

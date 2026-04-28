@@ -1,19 +1,41 @@
-import React from "react";
+// @ts-nocheck
+import React, { useEffect, useRef } from "react";
 import styles from "./Schedule.module.css";
 import Hero from "../../components/Hero/Hero";
 import ModalitiesCarousel from "../../components/ModalitiesCarousel/ModalitiesCarousel";
 import EntertainmentCarousel from "../../components/EntertainmentCarousel/EntertainmentCarousel";
+import { useLocation } from "react-router-dom";
 
 const Schedule = () => {
+  const location = useLocation();
+  const entertainmentRef = useRef(null);
+  const modalitiesRef = useRef(null);
+
+  useEffect(() => {
+    if (location.state?.scrollTo === "entretenimento") {
+      entertainmentRef.current?.scrollIntoView({
+        behavior: "smooth",
+      });
+    } else if (location.state?.scrollTo === "modalidades") {
+      modalitiesRef.current?.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  }, [location]);
+
   return (
     <>
       <Hero />
 
       <div className={styles.schedule}>
-        <h1 className={styles.scheduleTitle}>Arena Games</h1>
-        <ModalitiesCarousel />
-        <h1 className={styles.scheduleTitle}>Entretenimento</h1>
-        <EntertainmentCarousel />
+        <section ref={modalitiesRef}>
+          <h1 className={styles.scheduleTitle}>Arena Games</h1>
+          <ModalitiesCarousel />
+        </section>
+        <section ref={entertainmentRef}>
+          <h1 className={styles.scheduleTitle}>Entretenimento</h1>
+          <EntertainmentCarousel />
+        </section>
       </div>
     </>
   );

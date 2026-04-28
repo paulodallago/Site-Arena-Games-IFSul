@@ -49,7 +49,7 @@
   box-shadow: var(--shadow-1);
 }
 
-@media (maxwidth: 768px) {
+@media (max-width: 768px) {
   .sectionTitle {
     font-size: 1.6rem;
   }

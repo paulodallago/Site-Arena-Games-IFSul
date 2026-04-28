@@ -94,6 +94,7 @@
   .contactText h2,
   .contactIntro h2 {
     font-size: 1.5rem;
+    margin: 2vh auto;
   }
 
   .contactText i {

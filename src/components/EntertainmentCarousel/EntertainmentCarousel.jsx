@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Carousel } from "primereact/carousel";
 import styles from "./EntertainmentCarousel.module.css";
 
@@ -11,11 +12,9 @@ const EntertainmentCarousel = () => {
   const [visible, setVisible] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
 
-  const mobile = window.innerWidth < 768;
-
   const itemTemplate = (item) => {
     return (
-      <div className={`${styles.carouselItem} defaultHover`}>
+      <div className={`${styles.carouselItem} defaultLift`}>
         <img src={item.image} alt={item.title} className={styles.carouselImg} />
         <div className={styles.carouselContent}>
           <h3>{item.title}</h3>
@@ -62,10 +61,8 @@ const EntertainmentCarousel = () => {
             numScroll={1}
             itemTemplate={itemTemplate}
             circular
-            showNavigators={mobile}
-            showIndicators={false}
             responsiveOptions={responsiveOptions}
-            // autoplayInterval={4000}
+            autoplayInterval={4000}
           />
         </div>
       </div>

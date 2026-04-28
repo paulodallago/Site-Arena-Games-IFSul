@@ -1,11 +1,10 @@
 .timer {
-  width: 90vw;
-  margin: 0 auto;
+  width: 100vw;
+  margin: 5vh auto;
   text-align: center;
-  background-color: var(--background-2);
-  border-radius: 12px;
+  background: var(--background-gradient-2);
   box-shadow: var(--shadow-1);
-  padding: 1rem;
+  padding: 3vh;
   font-size: 1.5rem;
 }
 
@@ -16,7 +15,7 @@
 
 @media (max-width: 768px) {
   .timer {
-    width: 95vw;
+    margin: 0 auto;
     padding: 0.75rem;
     font-size: 1.2rem;
   }

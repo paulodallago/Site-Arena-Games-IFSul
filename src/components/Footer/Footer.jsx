@@ -19,6 +19,13 @@ export default function Footer() {
                 >
                   <img src={logo_if} alt="IFSul Logo" />
                 </a>
+                <a
+                  href="https://passofundo.ifsul.edu.br"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={logo_if} alt="IFSul Logo" />
+                </a>
               </div>
             </div>
 

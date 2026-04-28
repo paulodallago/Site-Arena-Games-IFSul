@@ -3,6 +3,8 @@ import hero_cs from "../../assets/img/heroes/cs.png";
 import hero_valorant from "../../assets/img/heroes/valorant.png";
 import hero_lol from "../../assets/img/heroes/lol.png";
 import hero_chess from "../../assets/img/heroes/chess.png";
+import hero_entertainment from "../../assets/img/heroes/entertainment.png";
+import hero_rocket_league from "../../assets/img/heroes/rocket_league.png";
 
 const mainCarouselContent = [
   {
@@ -30,10 +32,22 @@ const mainCarouselContent = [
     image: hero_valorant,
   },
   {
+    title: "Rocket League",
+    description:
+      "Acelere rumo à vitória em partidas intensas que misturam futebol e alta velocidade. Execute manobras aéreas, faça jogadas espetaculares e supere seus adversários em confrontos cheios de adrenalina.",
+    image: hero_rocket_league,
+  },
+  {
     title: "Xadrez",
     description:
       "Teste seu raciocínio lógico e capacidade estratégica em partidas que valorizam planejamento e concentração a cada movimento.",
     image: hero_chess,
+  },
+  {
+    title: "Entretenimento",
+    description:
+      "Prepare-se para muita diversão no campus, com mesas de RPG, jogos retrô, jogos de cartas e várias outras atividades imperdíveis.",
+    image: hero_entertainment,
   },
 ];
 

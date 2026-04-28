@@ -1,13 +1,28 @@
 import React from "react";
 import styles from "./Modalities.module.css";
 import modalitiesContent from "../../assets/json/modalitiesContent";
+import { Button } from "primereact/button";
+import { useNavigate } from "react-router-dom";
 
 const Modalities = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <section className={styles.gameModes}>
         <div className={styles.container}>
           <h2 className={`${styles.sectionTitle} underline`}>Modalidades</h2>
+          <div className={styles.upperSection}>
+            <Button
+              label="Programação completa"
+              className={styles.button + " defaultHover"}
+              onClick={() =>
+                navigate("/programacao", {
+                  state: { scrollTo: "modalidades" },
+                })
+              }
+            />
+          </div>
 
           <div className={styles.modesGrid}>
             {modalitiesContent.map((mode, index) => (

@@ -1,11 +1,16 @@
+// @ts-nocheck
 import { Carousel } from "primereact/carousel";
 import React from "react";
 import styles from "./MainCarousel.module.css";
 import mainCarouselContent from "../../assets/json/mainCarouselContent";
 import responsiveOptions from "../../utils";
+import { Button } from "primereact/button";
+import { useNavigate } from "react-router-dom";
 
 const MainCarousel = () => {
   const mobile = window.innerWidth < 768;
+
+  const navigate = useNavigate();
 
   const itemTemplate = (item) => {
     return (
@@ -17,6 +22,28 @@ const MainCarousel = () => {
           <div className={styles.carouselContent}>
             <h3>{item.title}</h3>
             <p>{item.description}</p>
+            {item.title === "Entretenimento" ? (
+              <Button
+                label="Ver mais"
+                onClick={() =>
+                  navigate("/programacao", {
+                    state: { scrollTo: "entretenimento" },
+                  })
+                }
+                className="defaultHover"
+              />
+            ) : (
+              <Button
+                label="Inscrever-se"
+                onClick={() =>
+                  window.open(
+                    "https://painel.passofundo.ifsul.edu.br",
+                    "_blank",
+                  )
+                }
+                className="defaultHover"
+              />
+            )}
           </div>
         </div>
       </div>

@@ -39,20 +39,11 @@
 
 .register {
   text-decoration: none;
-  background: linear-gradient(
-    90deg,
-    rgba(96, 77, 235, 1) 0%,
-    rgba(0, 47, 105, 1) 100%
-  );
+  background: var(--background-gradient-3);
   padding: 7px 15px;
   color: white;
   border-radius: 15px;
-  transition: 0.2s ease-in-out;
-  box-shadow: 0px 0px 2px 2px #0d0d0d1e;
-}
-
-.register:hover {
-  transform: scale(1.15);
+  box-shadow: var(--shadow-2);
 }
 
 .hamburger {
