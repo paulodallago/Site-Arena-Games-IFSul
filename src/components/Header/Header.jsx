@@ -10,12 +10,12 @@ const Header = () => {
     {
       label: "Home",
       icon: "pi pi-home",
-      url: "/",
+      url: "/arena-games/",
     },
     {
       label: "Próxima Edição",
       icon: "pi pi-calendar",
-      url: "/#/programacao",
+      url: "/arena-games/#/programacao",
     },
   ];
 

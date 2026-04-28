@@ -26,7 +26,7 @@ const Modalities = () => {
 
           <div className={styles.modesGrid}>
             {modalitiesContent.map((mode, index) => (
-              <div key={index} className={styles.gameModeCard}>
+              <div key={index} className={styles.gameModeCard + " defaultLift"}>
                 <img
                   src={mode.image}
                   alt={mode.title}

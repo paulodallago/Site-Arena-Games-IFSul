@@ -54,16 +54,6 @@
     rgba(74, 144, 226, 0.2)
   );
   opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.gameModeCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-.gameModeCard:hover::before {
-  opacity: 1;
 }
 
 .gameImage {
