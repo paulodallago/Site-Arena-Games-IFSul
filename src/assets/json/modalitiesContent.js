@@ -1,7 +1,7 @@
 import grid_cs from "../../assets/img/grids/cs.png";
 import grid_lol from "../../assets/img/grids/lol.png";
 import grid_valorant from "../../assets/img/grids/valorant.png";
-import grid_chess from "../../assets/img/grids/chess.jpg";
+import grid_chess from "../../assets/img/grids/chess.png";
 import grid_rocket_league from "../../assets/img/grids/rocket_league.png";
 
 const modalitiesContent = [

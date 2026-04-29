@@ -10,12 +10,12 @@ const Header = () => {
     {
       label: "Home",
       icon: "pi pi-home",
-      url: "/arena-games/",
+      url: "/",
     },
     {
       label: "Próxima Edição",
       icon: "pi pi-calendar",
-      url: "/arena-games/#/programacao",
+      url: "/#/programacao",
     },
   ];
 
@@ -36,6 +36,8 @@ const Header = () => {
         ))}
         <a
           href="https://painel.passofundo.ifsul.edu.br/"
+          target="_blank"
+          rel="noopener noreferrer"
           className={styles.register + " defaultHover"}
         >
           <span>Inscrever-se</span>
@@ -59,6 +61,8 @@ const Header = () => {
           ))}
           <a
             href="https://painel.passofundo.ifsul.edu.br/"
+            target="_blank"
+            rel="noopener noreferrer"
             className={styles.mobileRegister}
           >
             Inscrever-se

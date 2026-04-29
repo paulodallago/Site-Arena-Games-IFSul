@@ -1,6 +1,8 @@
 import React from "react";
 import logo_if from "../../assets/img/if/logo_pf.png";
 import logo_off from "../../assets/img/partners/off_icon.jpg";
+import logo_cc from "../../assets/img/partners/cc_icon.jpeg";
+import logo_terabyte from "../../assets/img/partners/terabyte_icon.png";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -17,14 +19,14 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={logo_if} alt="IFSul Logo" />
+                  <img src={logo_if} alt="Logo IFSul" />
                 </a>
                 <a
-                  href="https://passofundo.ifsul.edu.br"
+                  href="https://inf.passofundo.ifsul.edu.br/src/home/index.html"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={logo_if} alt="IFSul Logo" />
+                  <img src={logo_cc} alt="Logo CC" />
                 </a>
               </div>
             </div>
@@ -40,6 +42,13 @@ export default function Footer() {
                   rel="noopener noreferrer"
                 >
                   <img src={logo_off} alt="OffClub Logo" />
+                </a>
+                <a
+                  href="https://www.instagram.com/terabyteshop/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={logo_terabyte} alt="Terabyte Logo" />
                 </a>
               </div>
             </div>
