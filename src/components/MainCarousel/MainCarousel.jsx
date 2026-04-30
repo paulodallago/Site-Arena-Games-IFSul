@@ -3,7 +3,7 @@ import { Carousel } from "primereact/carousel";
 import React from "react";
 import styles from "./MainCarousel.module.css";
 import mainCarouselContent from "../../assets/json/mainCarouselContent";
-import responsiveOptions from "../../utils";
+import { responsiveOptionsMain } from "../../utils";
 import { Button } from "primereact/button";
 import { useNavigate } from "react-router-dom";
 
@@ -14,7 +14,7 @@ const MainCarousel = () => {
 
   const itemTemplate = (item) => {
     return (
-      <div className={styles.carouselItem}>
+      <div className={styles.carouselItem + " mainCarousel"}>
         <div
           className={styles.carouselImg}
           style={{ backgroundImage: `url(${item.image})` }}
@@ -61,7 +61,7 @@ const MainCarousel = () => {
           itemTemplate={itemTemplate}
           circular
           autoplayInterval={4000}
-          responsiveOptions={responsiveOptions}
+          responsiveOptions={responsiveOptionsMain}
           showIndicators={!mobile}
           showNavigators={!mobile}
         />

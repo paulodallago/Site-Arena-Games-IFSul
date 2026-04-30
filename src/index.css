@@ -101,3 +101,7 @@ body {
 .p-carousel-item {
   margin: 2vh 0;
 }
+
+.p-carousel-item:has(.mainCarousel) {
+  margin-top: 0;
+}

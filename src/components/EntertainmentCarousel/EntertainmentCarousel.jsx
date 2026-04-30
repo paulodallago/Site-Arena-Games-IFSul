@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { Button } from "primereact/button";
 import entertainment from "../../assets/json/entertainmentContent";
 import InfoDialog from "../InfoDialog/InfoDialog";
-import responsiveOptions from "../../utils";
+import { responsiveOptions } from "../../utils";
 
 const EntertainmentCarousel = () => {
   const [visible, setVisible] = useState(false);

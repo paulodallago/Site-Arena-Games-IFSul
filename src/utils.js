@@ -1,4 +1,4 @@
-const responsiveOptions = [
+export const responsiveOptions = [
   {
     breakpoint: "1024px",
     numVisible: 2,
@@ -11,4 +11,10 @@ const responsiveOptions = [
   },
 ];
 
-export default responsiveOptions;
+export const responsiveOptionsMain = [
+  {
+    breakpoint: "768px",
+    numVisible: 1,
+    numScroll: 1,
+  },
+];

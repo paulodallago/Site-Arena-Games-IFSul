@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { Button } from "primereact/button";
 import InfoDialog from "../InfoDialog/InfoDialog";
 import modalities from "../../assets/json/modalitiesContent";
-import responsiveOptions from "../../utils";
+import { responsiveOptions } from "../../utils";
 
 const ModalitiesCarousel = () => {
   const [visible, setVisible] = useState(false);

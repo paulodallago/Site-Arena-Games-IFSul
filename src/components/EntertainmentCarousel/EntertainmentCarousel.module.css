@@ -11,6 +11,7 @@
   border-radius: 10px;
   margin: 10px;
   box-shadow: var(--shadow-1);
+  margin: 0 auto;
 }
 
 .carouselContent {
@@ -23,7 +24,7 @@
 }
 
 .carouselImg {
-  max-height: 50vh;
+  width: 100%;
   object-fit: cover;
 }
 
